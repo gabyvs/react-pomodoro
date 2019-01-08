@@ -13,6 +13,9 @@ class Pomodoro extends Component {
     if (this.state[timerName] === 60) return;
     const newState = Object.assign({}, this.state);
     newState[timerName] = this.state[timerName] + 1;
+    if (timerName === 'warningLength' && newState.warningLength > newState.sessionLength) {
+      newState.sessionLength++;
+    }
     this.setState(newState);
   };
 
@@ -20,6 +23,9 @@ class Pomodoro extends Component {
     if (this.state[timerName] === 1) return;
     const newState = Object.assign({}, this.state);
     newState[timerName] = this.state[timerName] - 1;
+    if (timerName === 'sessionLength' && newState.warningLength > newState.sessionLength) {
+      newState.warningLength--;
+    }
     this.setState(newState);
   };
 
