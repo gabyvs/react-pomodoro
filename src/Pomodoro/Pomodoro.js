@@ -17,7 +17,7 @@ class Pomodoro extends Component {
   };
 
   handleDecrease = (timerName) => {
-    if (this.state[timerName] === 0) return;
+    if (this.state[timerName] === 1) return;
     const newState = Object.assign({}, this.state);
     newState[timerName] = this.state[timerName] - 1;
     this.setState(newState);
