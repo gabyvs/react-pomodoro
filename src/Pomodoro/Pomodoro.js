@@ -5,8 +5,8 @@ import Timer from '../Timer/Timer';
 
 class Pomodoro extends Component {
   state = {
-    sessionLength: 2, // TODO: 25
-    warningLength: 1,
+    sessionLength: 25,
+    warningLength: 5
   };
 
   handleIncrease = (timerName) => {

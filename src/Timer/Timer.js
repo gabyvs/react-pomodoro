@@ -19,7 +19,7 @@ class Timer extends Component {
     let minutes = this.state.minutes;
     let seconds = this.state.seconds - 1;
     if (seconds === -1) {
-      seconds = 5; // TODO: 59
+      seconds = 59;
       minutes -= 1;
     }
     const status = minutes === 0 && seconds === 0 ? 'stopped' : 'active';
