@@ -1,0 +1,24 @@
+.pomodoro {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pomodoro-legend {
+  color: white;
+  font-size: 2em;
+}
+
+.pomodoro-separator {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.timers {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}

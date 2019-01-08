@@ -1,0 +1,31 @@
+.timer-config {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-config-legend {
+  color: white;
+  padding: 5px;
+}
+
+.timer-config-time {
+  background-color: white;
+  color: #96211e;
+  border-radius: 50%;
+  padding: 6px;
+  font-weight: bolder;
+  margin: 5px;
+  min-width: 18px;
+  text-align: center;
+}
+
+.timer-config-button {
+  border: 1px solid #bf3633;
+  border-radius: 4px;
+  padding: 0 12px 2px 12px;
+  color: white;
+  background-color: #96211e;
+  font-size: 1.2em;
+  margin: 5px;
+}
